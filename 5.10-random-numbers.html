@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>5.10 Random Numbers</title>
+</head>
+
+<body>
+  <h1>5.10 Random Numbers</h1>
+  <section>
+    <h2>Notes</h2>
+    <h3>Intro</h3>
+    <p><b>Random numbers are useful in software development for many reasons - game mechanics, generating
+        usernames/passwords, anytime you need something seemingly unpredictiable.</b></p>
+    <P><b> Pseudo-Random Numbers - computers are just big calculators solving formulas and cant create truly random
+        numbers, but instead use an algorithm that generates numbers that seem random.</b></P>
+    <h3>Random numbers in JS</h3>
+
+    <p><b>JavaScript provides a number of functions that are useful for generating random numbers.</b></p>
+    <li><code>Math.random()</code> is a function that returns a pseudo-random number between 0 and 1, not including 1.
+    </li>
+    <li><code>Math.floor()</code> if a function that takes a decimal number and rounds it down - chops off the decimal
+      part.</li>
+
+    <button onclick="alert(Math.random())">Test <code>Math.random()</code></button>
+    <button onclick="alert(Math.floor(3.37569))">Test <code>Math.floor()</code></button>
+    <h3>Random number calculations</h3>
+    <p>To produce a random integer from a min value to a max value(uncluding the min and max) use calculations.
+      <li>Math.floor(Math.random() * (max +1)) + min</li>
+      <u>Example</u>
+    <p>Generate a random number from 1 to 10 and store it in a variable</p>
+    <code>var randNum = Math.floor(Math.Random) * 11) + 1;</code>
+    </p>
+    <button onclick="example()">Generate random num from 1 to 10</button>
+    <script>
+      function example() {
+        var randNum = Math.floor(Math.random() * 10) + 1;
+        alert(randNum)
+      }
+    </script>
+  </section>
+
+  <section>
+    <h2>Problem 1</h2>
+    <p>Write a function that will “roll a die” (generate a random number) for the user. The user should be able to
+      choose how many sides are on the die.</p>
+    <button onclick="problem1()">Roll Dice</button>
+    <script>
+    function problem1() {
+        var randDice = Math.floor(Math.random() * 6) + 1;
+        alert(randDice)
+    }
+    </script>
+  </section>
+  
+  <section>
+    <h2>Problem 2</h2>
+    <p>Write a function that rolls a 6-sided die 100 times and prints out all of the rolls. Each value rolled should be separated by a space.</p>
+    <button onclick="problem2()">Roll dice 100 times</button>
+    <script>
+      function problem2() {
+
+      }
+    </script>
+  </section>
+</body>
+
+</html>

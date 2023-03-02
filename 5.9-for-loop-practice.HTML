@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Loop Algorithms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>For Loop Algorithms</h1>
+  <section>
+    <h2>Problem 1</h2>
+    <p>
+      Write a separete function for each problem that is called by clicking a link. Use comments to think through the
+      algroithm and describe what your code is doing.
+    </p>
+    <p id="p1-output"> Output will appear here</p>
+    <input id="p1-num1" type="number" placeholder="Enter 1st number">
+    <input id="p1-num2" type="number" placeholder="Enter 2nd number">
+    <button onclick="problem1()">Add numbers</button>
+    <script>
+      function problem1() {
+        //Get user nums into variable
+        var num1 = parseInt(document.getElementById("p1-num1").value);
+        var num2 = parseInt(document.getElementById("p1-num2").value);
+        // Var to hold the sum
+        var sum = 0;
+        // Var to hold output p
+        var p = document.getElementById("p1-output");
+        p.innerHTML = "";
+        //Use for loop to add numbers and update output
+        for (var i = num1; i < num2; i++) {
+          sum += i;
+          p.innerHTML += i + " + ";
+        }
+        sum += num2;
+        p.innerHTML += num2 + " = " + sum;
+      }
+    </script>
+  </section>
+
+  <section>
+    <h2>Problem 2</h2>
+    <p>Write a function that prompts the user for a number and then draws that number of "fence posts" that look like
+      |--|. </p>
+    <p id="p2-output"> Output will appear here</p>
+    <input id="p2-num" placeholder="Enter your number of posts">
+    <button onclick="problem2()">Draw fence</button>
+    <script>
+      function problem2() {
+        // Get the number into variable
+        var num = parseInt(document.getElementById("p2-num").value);
+        // Var to hold output p 
+        var p = document.getElementById("p2-output")
+        // Use for loop to add the number of fences and update output 
+        for (var i = 0; i = num + 1; i++) {
+          p.innerHTML += "|--";
+        }
+        p.innerHTML += "|";
+
+      }
+    </script>
+  </section>
+
+  <section>
+    <h2>Problem 3</h2>
+    <p>Write a function that prompts the user for a number and then calculates the factorial of that number. The
+      factorial of a number is calculated by multiplying together all the numbers from 1 to the number.
+    </p>
+    <p id="p3-output"> Output will appear here</p>
+    <input id="p3-num" placeholder="Enter your number">
+    <button onclick="problem3()">Add number</button>
+    <script>
+      function problem3() {
+
+      }
+    </script>
+  </section>
+</body>
+
+</html>
