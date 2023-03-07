@@ -11,6 +11,7 @@ function example() {
 function problem1() {
 var travelList = ["Rome", "Paris", "Australia", "England", "Canada"];
 var place = travelList[2];
+alert(place);
 }
 
 
