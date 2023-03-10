@@ -16,5 +16,11 @@ alert(place);
 
 
 function problem2(){
-
+  var numList = ["2", "5", "7", "11"];
+  var num = numList[0];
+  console.log(num);
+  var num1 = numList[2];
+  console.log(num1);
+  var num2 = numList[4]
+  console.log(num2);
 }
