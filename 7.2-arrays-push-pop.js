@@ -24,6 +24,7 @@ console.log(favFoods);
 
 //Problem 1
 var daysOfTheWeek =[];
+var weekend = [];
 function problem1(){
   daysOfTheWeek.push("Monday");
   daysOfTheWeek.push("Tuesday");
@@ -39,6 +40,7 @@ function problem1(){
   weekend.push("Saturday");
   weekend.push("Sunday");
   printWeekend();
+  printWeekend();
 }
 function printDays(){
   console.log(daysOfTheWeek[0]);
@@ -49,5 +51,10 @@ function printDays(){
   console.log(daysOfTheWeek[5]);
   console.log(daysOfTheWeek[6]);
 }
-printDays();
+function printWeekend(){
+  var weekend = [];
+  console.log(weekend[0]);
+  console.log(weekend[1]);
+}
+
 
