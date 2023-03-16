@@ -16,31 +16,41 @@ console.log("Example 3 output below");
 
 // Example 4: Find the sum of all the (numerical) elements in an array
 console.log("Example 4 output below");
-var nums = [4, 8, 21, 56, 27, 420];
+ var nums = [4, 8, 21, 56, 27, 420];
 var sum = 0;
 for (var i = 0; i < nums.length; i++){
-  sum += nums[i];
+  sum = sum + nums[i];
 }
 console.log("Sum = " + sum);
 // Example 5: Find the max (numerical) value in an array
 console.log("Example 5 output below");
 var max ;
 for (var i = 0; i < nums.length; i++){
-  var current = nums [i];
-  
+  var current = nums[i];
+  if (current > max){
+    max = current;
+  }
 }
+console.log("max = " + max);
 
 // Start function for problem #1
 function problem1(){
   console.log("Problem 1 output below");
-
+  var nums = [1, 8, 3, 4, 2, 9];
+  var sum = 1;
+  for (var i = 0; i < nums.length; i++){
+    sum = sum * nums[i];
+  }
 }
-
+console.log("Result = " + sum);
 
 // Start function for problem #2
 function problem2(){
   console.log("Problem 2 output below");
-
+var flights = ["San Fransico", "New York", "Chicago", "Honolulu"];
+for (var i = 0; i < flights.length; i++){
+  
+}
 }
 
 
