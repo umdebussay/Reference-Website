@@ -1,6 +1,6 @@
 // Example 1: Print every element in an array
 console.log("Example 1 output below");
-var letters = ["a", "b", "c", "d"];
+// var letters = ["a", "b", "c", "d"];
 for (var i = 0; i < letters.length; i++){
   console.log(letters[i]);
 }
@@ -57,8 +57,21 @@ for (var i = 0; i < flights.length; i++){
 // Start function for problem #3
 function problem3(){
   console.log("Problem 3 output below");
-
+  var testArr = [1, 2, 3, 4];
+  var result = doubleList(testArr);
+  console.log(result);
 }
+
+function doubleList(arr){
+  var result = [];
+  for (var i = 0; i < arr.length; i++){
+    var val = arr[i];
+    result.push(val);
+    result.push(val);
+  }
+  return result;
+}
+
 
 
 // Start function for problem #4
