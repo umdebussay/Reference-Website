@@ -77,7 +77,8 @@ function doubleList(arr){
 // Start function for problem #4
 function problem4(){
   console.log("Problem 4 output below");
-
+  var arr = [1, 2, 3 ,4, 5, 6];
+  
 }
 
 
